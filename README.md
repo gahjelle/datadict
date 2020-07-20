@@ -31,24 +31,24 @@ class Point:
 For instances of the new dataclass, you can access attributes using square brackets, similar to dictionary access:
 
 ```python
->>> p = Point(1, 2)
->>> p
+>>> point = Point(1, 2)
+>>> point
 Point(x=1, y=2)
 
->>> p.x
+>>> point.x
 1
->>> p["x"]
+>>> point["x"]
 1
 
->>> p["y"] = 3
->>> p
+>>> point["y"] = 3
+>>> point
 Point(x=1, y=3)
 ```
 
 You can also convert the dataclass instance to a proper dictionary:
 
 ```python
->>> p.asdict()
+>>> point.asdict()
 {'x': 1, 'y': 3}
 ```
 
