@@ -9,7 +9,7 @@ author-email = "geirarne@gmail.com"
 home-page = "https://github.com/gahjelle/datadict"
 description-file   = "README.md"
 classifiers        = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Natural Language :: English",
@@ -20,6 +20,8 @@ classifiers        = [
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Code Generators",
 ]
 keywords           = "dataclass dict dictionary item access"
 
