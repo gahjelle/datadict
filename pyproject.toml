@@ -1,0 +1,47 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "datadict"
+author = "Geir Arne Hjelle"
+author-email = "geirarne@gmail.com"
+home-page = "https://github.com/gahjelle/datadict"
+description-file   = "README.md"
+classifiers        = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+keywords           = "dataclass dict dictionary item access"
+
+# Requirements
+requires-python    = ">=3.6"
+requires           = [
+    "dataclasses; python_version < '3.7'",
+]
+
+
+[tool.flit.metadata.requires-extra]
+dev                = ["black", "bumpversion", "flake8", "flit", "interrogate", "isort", "mypy", "pre-commit"]
+doc                = ["mkdocs"]
+test               = ["black", "flake8", "interrogate", "isort", "mypy", "pytest", "pytest-cov", "tox"]
+
+
+[tool.interrogate]
+ignore-init-method = false
+ignore-init-module = false
+ignore-magic = false
+ignore-semiprivate = false
+ignore-private = false
+ignore-module = false
+fail-under = 100
+verbose = 0
